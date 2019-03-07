@@ -9,9 +9,12 @@ public class IntroToArrayLists {
 		
 		ArrayList<String> strings = new ArrayList<String>();
 		
+		ArrayList<Integer> ints = new ArrayList<Integer>();
+
+		
 		//2. Add five Strings to your list
 		
-		String First = "1",Second = "2",Third = "3",Fourth = "4",Fifth = "5";
+		String First = "e1",Second = "e2",Third = "Hello",Fourth = "4",Fifth = "5";
 		
 		strings.add(First);
 		strings.add(Second);
@@ -50,11 +53,41 @@ public class IntroToArrayLists {
 	
 		//6. Print all the Strings in reverse order.
 		
-	for(int x = strings.size() - 1; x >= 0; x--) {
-		System.out.println(strings.get(x));
-	}
+//	for(int x = strings.size() - 1; x >= 0; x--) {
+//		System.out.println(strings.get(x));
+//	}
 	
-		//7. Print only the Strings that have the letter 'e' in them.
+	
+	int k = strings.indexOf("e");
+	
+	for(int x = 0; x < strings.size();x ++) {
+		
+		String idk = strings.get(x);
+	
+		if(idk.contains("e")) {
+		System.out.println(idk);
+		}
+	}
+
+//	
+//	System.out.println(strings.get(k));
+	
+
+//7. Print only the Strings that have the letter 'e' in them.
+	
+	ints.add(1);
+	ints.add(2);
+	ints.add(3);
+	ints.add(4);
+	
+	System.out.println(ints.get(2));
+
+	
+	int an = ints.remove(2);
+	System.out.println(an);
+	
+	System.out.println(ints.get(2));
+	
 	}
 }
 
